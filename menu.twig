@@ -1,0 +1,48 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{{widget('extendednavigation', 'tabletnavigation', {})|raw}}
+
+<div class="canvas-outer">
+<div class="canvas-inner">
+
+<header class="bk-header">
+    <div class="wrapper clearfix">
+        <div class="desktop-content-left">
+            {{widget('content', 'desktopcontentleft', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"})|raw}}
+        </div>
+        <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        </div>
+        <div class="desktop-content-right">
+            {{widget('content', 'desktopcontentright', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"})|raw}}
+        </div>
+        <div class="mobile-content-left">
+            {{widget('content', 'mobilecontentleft', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"})|raw}}
+        </div>
+        
+        <div class="mobile-content-right">
+            {{widget('content', 'mobilecontentright', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"})|raw}}
+        </div>
+    </div><!--end wrapper clearfix-->
+</header>
+
+<div class="main wrapper clearfix">
+{{widget('menusections', 'menusections1', {})|raw}}
+{{widget('menu', 'menu1', {})|raw}}
+</div>
+
+</div><!-- end canvas-inner -->
+</div><!-- end canvas-outer -->
+
+
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        {{widget('socialicons', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+    </div>
+</footer>
+
+{% endblock %}
