@@ -19,15 +19,6 @@
             "color7":"#f3f6f5"
         },
         "Swatch 2": {
-            "color1":"#E5F3F0",
-            "color2":"#ffffff",
-            "color3":"#589FA1",
-            "color4":"#589FA1",
-            "color5":"#93B3B6",
-            "color6":"#93B3B6",
-            "color7":"#F0F8F6"
-        },
-        "Swatch 3": {
             "color1":"#D9DCE2",
             "color2":"#ffffff",
             "color3":"#7AB3B1",
@@ -35,6 +26,15 @@
             "color5":"#A5ACBA",
             "color6":"#A5ACBA",
             "color7":"#F4F6F9"
+        },
+        "Swatch 3": {
+            "color1":"#E5F3F0",
+            "color2":"#ffffff",
+            "color3":"#589FA1",
+            "color4":"#589FA1",
+            "color5":"#93B3B6",
+            "color6":"#93B3B6",
+            "color7":"#F0F8F6"
         },
         "Swatch 4": {
             "color1":"#DCDBD9",
@@ -56,7 +56,7 @@
         }
     },
     "fontSwatch": {
-       "title": "Pt Sans",
+       "title": "Futura",
         "font1": {
             "font-family": "\"Futura\", Helvetica, sans-serif",
             "font-size": "24px",
