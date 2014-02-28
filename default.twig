@@ -11,22 +11,18 @@
 
 <header class="bk-header">
     <div class="wrapper clearfix">
-        <div class="desktop-content-left">
-            {{widget('content', 'headercontentleft', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"})|raw}}
+        <div class="desktop-companyaddress">
+            {{widget('companyaddress', 'desktopcompanyaddress', {})|raw}}
         </div>
         <div class="companyheader clearfix">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         </div>
-        <div class="desktop-content-right">
-            {{widget('content', 'headercontentright', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"})|raw}}
+        <div class="tablet-companyaddress">
+            {{widget('companyaddress', 'tabletcompanyaddress', {})|raw}}
         </div>
-        <div class="tablet-content-left">
-            {{widget('content', 'headercontentleft', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"})|raw}}
-        </div>
-        
-        <div class="tablet-content-right">
-            {{widget('content', 'headercontentright', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"})|raw}}
+        <div class="header-content">
+            {{widget('content', 'headercontent', {"content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"})|raw}}
         </div>
     </div><!--end wrapper clearfix-->
 </header>
