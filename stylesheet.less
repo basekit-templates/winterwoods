@@ -59,6 +59,9 @@ body {
         width: 100%;
         margin-bottom: 1em;
         min-height: 40px;
+        @media @tablet {
+            background-color: @color-swatch7;
+        }
         li {
             ul {
                 display: none !important;
@@ -99,7 +102,7 @@ body {
                     ul {
                         display: block !important;
                         position: absolute;
-                        background-color: @color-swatch1;
+                        background-color: @color-swatch7;
                         z-index: 500;
                         padding: 0;
                         margin: 15px 0 0 0;
