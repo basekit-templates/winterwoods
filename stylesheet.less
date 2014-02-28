@@ -226,7 +226,7 @@ body {
    CONTENT WIDGETS IN HEADER
    =============================== */
 
-.desktop-content-left {
+.desktop-companyaddress {
     width: 28%;
     float: left;
     @media only screen and (max-width: 960px) {
@@ -234,40 +234,32 @@ body {
     }
 }
 
-.desktop-content-right {
+.header-content {
     width: 28%;
     float: right;
     @media only screen and (max-width: 960px) {
-        display: none;
+        width: 100%;
+        padding: 1.5em 0;
+        display: block;
+        float: left;
+        border-top: 1px dotted lighten(@color-swatch6,15%);
     }
+    .widget.content .bk-content-text p {
+        padding: 0;
+    }
+
 }
 
-.tablet-content-left {
+.tablet-companyaddress {
     display: none;
     @media only screen and (max-width: 960px) {
         display: block;
         width:100%;
-        padding: 1.5em 0 2em;
+        padding: 1em 0 0.2em;
         float: left;
         border-top: 1px dotted lighten(@color-swatch6,15%);
     }
 }
-
-.tablet-content-right {
-    display: none;
-    @media only screen and (max-width: 960px) {
-        width: 100%;
-        padding: 2em 0;
-        display: block;
-        float: left;
-        border-top: 1px dotted lighten(@color-swatch6,15%);
-    }
-}
-
-.bk-header .widget.content .bk-content-text p {
-    padding: 0;
-}
-
 
 
 /* ===============================
@@ -319,7 +311,7 @@ body {
                 float: none;
             }
             
-            @media @tablet {
+            @media only screen and (max-width: 960px) {
                 margin: 30px 0 25px;
             }
             @media @mobile {
@@ -390,20 +382,25 @@ body {
                 }
                 @media only screen and (max-width: 550px) {
                     width: 100%;
-                    border-top: 1px dotted fade(@color-swatch6,20%);
+                    border-top: 1px dotted lighten(@color-swatch6,15%);
                     padding: 15px 0 10px 0;
+                }
+                &:first-child {
+                    border-top: none;
                 }
                 a {
                     display: block;
                     font-family:@font-swatch6-font-family;
                     font-size:@font-swatch6-font-size;
                     font-weight: @font-swatch6-font-weight;
-                    color: @font-swatch4-color;
+                    color: @font-swatch6-color;
                     line-height:@font-swatch6-line-height;
                     letter-spacing: @font-swatch6-letter-spacing;
+
                     &:hover {
                         color: @font-swatch6-color-hover;
                         text-decoration: underline;
+
                     }
                 }
             }
